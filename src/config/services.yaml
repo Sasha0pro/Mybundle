@@ -6,12 +6,12 @@ services:
     public: false
     autoconfigure: true
 
-  PassGeneratorBundle\:
+  DTOServiceBundle\:
     resource: '../'
     exclude:
       - '../DependencyInjection/'
-      - '../PassGeneratorBundle.php'
+      - '../DTOServiceBundle.php'
 
-  pgb.password_generator:
-    class: PassGeneratorBundle\PassGenerator
-  PassGeneratorBundle\PassGenerator: '@pgb.password_generator'
+  pgb.dto_service:
+    class: PassGeneratorBundle\DTOService
+  DTOServiceBundle\DTOService: '@pgb.dto_service'

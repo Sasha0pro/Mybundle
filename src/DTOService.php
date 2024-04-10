@@ -1,8 +1,11 @@
 <?php
 
-namespace PassGeneratorBundle;
+namespace DTOServiceBundle;
 
 class DTOService
 {
-    private string $name = "sasha";
+    public function __construct
+    (
+        private readonly string $property,
+    ){}
 }

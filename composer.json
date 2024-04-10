@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PassGeneratorBundle\\": "src/"
+            "DTOServiceBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PassGeneratorBundle\\Tests\\": "tests/"
+            "DTOServiceBundle\\Tests\\": "tests/"
         }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace PassGeneratorBundle\DependencyInjection;
+namespace DTOServiceBundle\DependencyInjection;
 
 use Exception;
 use Symfony\Component\Config\FileLocator;
@@ -8,7 +8,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class PassGeneratorExtension extends Extension
+class DTOServiceExtension extends Extension
 {
 
     /**
@@ -28,11 +28,11 @@ class PassGeneratorExtension extends Extension
 
         $definition = $container->getDefinition('pgb.password_generator');
 
-        $definition->setArgument('$length', $config['passwordLength']);
+        $definition->setArgument('$property', $config['property']);
     }
 
     public function getAlias(): string
     {
-        return 'password_generator';
+        return 'dto_service';
     }
 }
