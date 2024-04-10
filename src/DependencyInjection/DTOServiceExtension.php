@@ -26,7 +26,7 @@ class DTOServiceExtension extends Extension
 
         $config = $this->processConfiguration($configuration, $configs);
 
-        $definition = $container->getDefinition('pgb.password_generator');
+        $definition = $container->getDefinition('pgb.dto_service');
 
         $definition->setArgument('$property', $config['property']);
     }
