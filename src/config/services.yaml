@@ -13,5 +13,5 @@ services:
       - '../DTOServiceBundle.php'
 
   pgb.dto_service:
-    class: PassGeneratorBundle\DTOService
+    class: DTOServiceBundle\DTOService
   DTOServiceBundle\DTOService: '@pgb.dto_service'

@@ -14,7 +14,7 @@ class Configuration implements ConfigurationInterface
 
         $treeBuilder->getRootNode()
             ->children()
-            ->integerNode('property')->end()->end();
+            ->integerNode('property')->defaultValue(0)->end()->end();
 
         return $treeBuilder;
     }
