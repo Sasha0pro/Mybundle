@@ -10,7 +10,6 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 class DTOServiceExtension extends Extension
 {
-
     /**
      * @throws Exception
      */
